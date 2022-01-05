@@ -3,13 +3,13 @@
 # This is the command to install the program on debian/ubuntu based systems
 sudo apt-get install clamav
 
-#The freshclam database needs to be updated first.
+# The freshclam database needs to be updated first.
 sudo /etc/init.d/clamav-freshclam stop
 sudo freshclam
 sudo /etc/init.d/clamav-freshclam start
 
-#This runs the antivirus program
+# This runs the antivirus program
 clamscan -i -r ~/
 
-#This removes any detected viruses
+# This removes any detected viruses
 clamscan --remove=yes -i -r ~/
