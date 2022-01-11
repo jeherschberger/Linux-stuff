@@ -1,0 +1,12 @@
+## Sources used in this file 
+# https://forums.linuxmint.com/viewtopic.php?t=363991
+# https://cran.rstudio.com/
+
+# First you need to add the correct repo
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
+
+# Then you need to add the correct public key
+sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
+
+# Then install the r-base packages
+sudo apt install --no-install-recommends r-cran-rstan r-cran-tidyverse
